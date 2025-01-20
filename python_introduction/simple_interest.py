@@ -4,9 +4,9 @@ R = 0.05 #rate  (representing 5% annual interest rate)
 T = 3    #time (representing 3 years)
 
 #Print these variables
-print(f"P (Principal): {P}")
-print(f"R (Rate): {R}")
-print(f"T (Time): {T}")
+print(f"P (principal): {P}")
+print(f"R (rate): {R}")
+print(f"T (time): {T}")
 
 # Calculate the simple interest
 I = P * R * T
