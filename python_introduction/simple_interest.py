@@ -9,7 +9,7 @@ print(f"R (rate): {R}")
 print(f"T (time): {T}")
 
 # Calculate the simple interest
-I = P * R * T
+interest  = I = P * R * T
 
 #Print the results
-print(f"The simple interest is : {I}")
+print(f"The simple interest is : {interest}")
