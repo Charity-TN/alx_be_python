@@ -1,5 +1,5 @@
-def main():
-    while True:
+
+while True:
         task = input("Enter your task: ").strip()
         priority = input("Priority (high,medium,low): ").strip().lower()
         time_bound = input("Is it time-bound? (yes or no): ").strip().lower()
@@ -28,5 +28,3 @@ def main():
             continue
         print(f"\n{reminder}")
         break
-if __name__ == "__main__":
-    main()
