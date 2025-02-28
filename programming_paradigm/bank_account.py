@@ -7,9 +7,11 @@ class BankAccount:
             self.account_balance += amount
             return True
         else:
-            print("You can only deposit an amount greater than zero")
+            return False
+        
     def withdraw(self,amount):
-        if amount > self.account_balance:
+        if amount > 0 and self.account_balance >= amount:
+            self.account_balance -= amount
             return True
         else:
             return False
