@@ -3,14 +3,13 @@ class BankAccount:
         self.account_balance = account_balance
 
     def deposit(self,amount):
-        if amount < 0:
-            print("You can only deposit an amount greater than zero")
-        else:
+        if amount > 0:
             self.account_balance += amount
-            return f"Deposited:${amount:.2f}"
+            return True
+        else:
+            print("You can only deposit an amount greater than zero")
     def withdraw(self,amount):
-        if self.account_balance > amount:
-            self.account_balance -= amount
+        if amount > self.account_balance:
             return True
         else:
             return False
